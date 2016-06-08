@@ -1,0 +1,51 @@
+body {
+    background-color:#c0deed; /*More grey*/
+}
+
+.spaceHeader{
+    color:#ffffff; /*Need change the color*/
+    border: 1px solid;
+}
+
+.twitterLogo{
+  margin-top:15px;
+}
+
+.dashboardName{
+    font-size:14px;
+    color:#8B8989;
+    font-style:bold;
+    font-family:Verdana;
+    margin-left:10px;
+}
+
+h3{
+    font-size:16px;
+    color:#8B8989;
+    font-family:Verdana;
+    margin-left:5px;
+    margin-bottom:2px;
+}
+
+hourTitle{
+    color:#000000;
+    height:2px;
+    margin-left:5px;
+    margin-bottom:2px;
+    width:400px;
+}
+
+.panel {
+    margin-top:15px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #CDC9C9
+}
+
+.panel-title{
+    font-size:14px;
+    color:#8B8989;
+    font-family:Verdana;
+    margin-left:10px;
+    text-align:left;
+}

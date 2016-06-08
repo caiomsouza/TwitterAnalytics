@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><CDADescriptor>
+  <DataSources>
+    <Connection id="sqlQuery_qttTweets" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="sqlQuery_screenName" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="sqlQuery_hashtag" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="sqlQuery_url" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="sqlQuery_mention" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="selectDateQuery" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="selectLocalQuery" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+  </DataSources>
+  <DataAccess access="public" connection="sqlQuery_qttTweets" id="sqlQuery_qttTweets" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters>
+      <Parameter default="" name="selectDateParameter" type="String"/>
+      <Parameter default="" name="selectLocalParameter" type="String"/>
+    </Parameters>
+    <Query><![CDATA[SELECT date_format(created, '%H') as time, count(id)
+FROM tweets
+WHERE date(created) = ${selectDateParameter} AND location = ${selectLocalParameter}
+GROUP BY time]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="sqlQuery_screenName" id="sqlQuery_screenName" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters>
+      <Parameter default="" name="selectLocalParameter" type="String"/>
+      <Parameter default="" name="selectDateParameter" type="String"/>
+    </Parameters>
+    <Query><![CDATA[SELECT screen_name, count(*)
+FROM tweets
+WHERE screen_name IS NOT NULL AND location = ${selectLocalParameter} AND date(created) = ${selectDateParameter} 
+group by screen_name
+order by count(*) DESC 
+LIMIT 5;]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="sqlQuery_hashtag" id="sqlQuery_hashtag" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters>
+      <Parameter default="" name="selectLocalParameter" type="String"/>
+      <Parameter default="" name="selectDateParameter" type="String"/>
+    </Parameters>
+    <Query><![CDATA[SELECT hashtag_1, count(*) as 'Quantidade'
+FROM tweets
+WHERE hashtag_1 IS NOT NULL AND location = ${selectLocalParameter} AND date(created) = ${selectDateParameter} 
+group by hashtag_1
+order by count(*) DESC 
+LIMIT 5;]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="sqlQuery_url" id="sqlQuery_url" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters>
+      <Parameter default="" name="selectLocalParameter" type="String"/>
+      <Parameter default="" name="selectDateParameter" type="String"/>
+    </Parameters>
+    <Query><![CDATA[SELECT url_1, count(*) as total
+FROM tweets
+WHERE url_1 IS NOT NULL AND location = ${selectLocalParameter} AND date(created) = ${selectDateParameter} 
+group by url_1
+order by count(*) DESC
+LIMIT 5;]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="sqlQuery_mention" id="sqlQuery_mention" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters>
+      <Parameter default="" name="selectLocalParameter" type="String"/>
+      <Parameter default="" name="selectDateParameter" type="String"/>
+    </Parameters>
+    <Query><![CDATA[SELECT mention_1, count(*) as total
+FROM tweets
+WHERE location IS NOT NULL AND location = ${selectLocalParameter} AND date(created) = ${selectDateParameter} 
+group by mention_1
+order by count(*) DESC
+LIMIT 5;]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="selectDateQuery" id="selectDateQuery" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[SELECT date(created) as date
+FROM tweets
+GROUP BY date]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="selectLocalQuery" id="selectLocalQuery" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[SELECT distinct location
+FROM tweets
+WHERE location IS NOT NULL
+GROUP BY location 
+ORDER BY count(*) DESC
+LIMIT 5]]></Query>
+  </DataAccess>
+</CDADescriptor>

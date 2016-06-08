@@ -1,0 +1,2659 @@
+{
+ "components": {
+  "rows": [
+   {
+    "id": "OTHERCOMPONENTS",
+    "name": "Others",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "type": "Label",
+      "value": "Others"
+     }
+    ],
+    "type": "Label",
+    "typeDesc": "<i>Group</i>"
+   },
+   {
+    "id": "fc4716fa-fdca-cb44-efb4-d6debdcff3d9",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "tweets"
+     },
+     {
+      "name": "listeners",
+      "type": "Listeners",
+      "value": "[]"
+     },
+     {
+      "name": "parameters",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "resultvar",
+      "type": "Result",
+      "value": "query"
+     },
+     {
+      "name": "dataSource",
+      "type": "Datasource",
+      "value": "count_tweets"
+     },
+     {
+      "name": "asynchronousMode",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "priority",
+      "type": "Integer",
+      "value": 5
+     },
+     {
+      "name": "refreshPeriod",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "htmlObject",
+      "type": "HtmlObject",
+      "value": ""
+     },
+     {
+      "name": "executeAtStart",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "preExecution",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postExecution",
+      "type": "JavaScript",
+      "value": "function(){\n    document.getElementById('tweets').innerHTML = toNumber(query[0][0], \"\");\n} "
+     },
+     {
+      "name": "postFetch",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "preChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "tooltip",
+      "type": "Html",
+      "value": ""
+     }
+    ],
+    "type": "ComponentsQuery",
+    "typeDesc": "Query Component"
+   },
+   {
+    "id": "5f3116fa-dc04-cc21-60a1-24dbf09c3464",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "url"
+     },
+     {
+      "name": "listeners",
+      "type": "Listeners",
+      "value": "[]"
+     },
+     {
+      "name": "parameters",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "resultvar",
+      "type": "Result",
+      "value": "query"
+     },
+     {
+      "name": "dataSource",
+      "type": "Datasource",
+      "value": "count_url"
+     },
+     {
+      "name": "asynchronousMode",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "priority",
+      "type": "Integer",
+      "value": 5
+     },
+     {
+      "name": "refreshPeriod",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "htmlObject",
+      "type": "HtmlObject",
+      "value": ""
+     },
+     {
+      "name": "executeAtStart",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "preExecution",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postExecution",
+      "type": "JavaScript",
+      "value": "function(){\n    document.getElementById('url').innerHTML = toNumber(query[0][0], \"\");\n} "
+     },
+     {
+      "name": "postFetch",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "preChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "tooltip",
+      "type": "Html",
+      "value": ""
+     }
+    ],
+    "type": "ComponentsQuery",
+    "typeDesc": "Query Component"
+   },
+   {
+    "id": "3d4641f2-ced3-2398-462e-ee2bfdaa762d",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "mentions"
+     },
+     {
+      "name": "listeners",
+      "type": "Listeners",
+      "value": "[]"
+     },
+     {
+      "name": "parameters",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "resultvar",
+      "type": "Result",
+      "value": "query"
+     },
+     {
+      "name": "dataSource",
+      "type": "Datasource",
+      "value": "count_mentions"
+     },
+     {
+      "name": "asynchronousMode",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "priority",
+      "type": "Integer",
+      "value": 5
+     },
+     {
+      "name": "refreshPeriod",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "htmlObject",
+      "type": "HtmlObject",
+      "value": ""
+     },
+     {
+      "name": "executeAtStart",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "preExecution",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postExecution",
+      "type": "JavaScript",
+      "value": "function(){\n    document.getElementById('mentions').innerHTML = toNumber(query[0][0], \"\");\n} "
+     },
+     {
+      "name": "postFetch",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "preChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "tooltip",
+      "type": "Html",
+      "value": ""
+     }
+    ],
+    "type": "ComponentsQuery",
+    "typeDesc": "Query Component"
+   },
+   {
+    "id": "16775620-d28e-d8fa-3d64-d06f75c02eb2",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "hashtags"
+     },
+     {
+      "name": "listeners",
+      "type": "Listeners",
+      "value": "[]"
+     },
+     {
+      "name": "parameters",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "resultvar",
+      "type": "Result",
+      "value": "query"
+     },
+     {
+      "name": "dataSource",
+      "type": "Datasource",
+      "value": "count_hashtag"
+     },
+     {
+      "name": "asynchronousMode",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "priority",
+      "type": "Integer",
+      "value": 5
+     },
+     {
+      "name": "refreshPeriod",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "htmlObject",
+      "type": "HtmlObject",
+      "value": ""
+     },
+     {
+      "name": "executeAtStart",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "preExecution",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postExecution",
+      "type": "JavaScript",
+      "value": "function(){\n    document.getElementById('hashtag').innerHTML = toNumber(query[0][0], \"\");\n} "
+     },
+     {
+      "name": "postFetch",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "preChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "tooltip",
+      "type": "Html",
+      "value": ""
+     }
+    ],
+    "type": "ComponentsQuery",
+    "typeDesc": "Query Component"
+   },
+   {
+    "id": "2dbc9551-d419-761a-9bd7-4b8cd962f269",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "topHashtags"
+     },
+     {
+      "name": "listeners",
+      "type": "Listeners",
+      "value": "[]"
+     },
+     {
+      "name": "parameters",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "resultvar",
+      "type": "Result",
+      "value": "query"
+     },
+     {
+      "name": "dataSource",
+      "type": "Datasource",
+      "value": "top_hashtags"
+     },
+     {
+      "name": "asynchronousMode",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "priority",
+      "type": "Integer",
+      "value": 5
+     },
+     {
+      "name": "refreshPeriod",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "htmlObject",
+      "type": "HtmlObject",
+      "value": ""
+     },
+     {
+      "name": "executeAtStart",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "preExecution",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postExecution",
+      "type": "JavaScript",
+      "value": "function(){\n    console.log(query);\n    var i;\n    for(i = 0; i < query.length; i++){\n        if(i == 0){\n            document.getElementById('topHashtags').innerHTML = \"#\"+query[i][0] + \"(\"+toNumber(query[i][1])+\")<br>\";\n        } else {\n            document.getElementById('topHashtags').innerHTML = document.getElementById('topHashtags').innerHTML + \"#\"+query[i][0] + \" (\"+toNumber(query[i][1])+\")<br>\";\n        }\n    }\n} "
+     },
+     {
+      "name": "postFetch",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "preChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "tooltip",
+      "type": "Html",
+      "value": ""
+     }
+    ],
+    "type": "ComponentsQuery",
+    "typeDesc": "Query Component"
+   },
+   {
+    "id": "b7dc7d88-760a-3da1-94ce-5fffee1c04be",
+    "parent": "OTHERCOMPONENTS",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "topTweets"
+     },
+     {
+      "name": "listeners",
+      "type": "Listeners",
+      "value": "[]"
+     },
+     {
+      "name": "parameters",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "resultvar",
+      "type": "Result",
+      "value": "query"
+     },
+     {
+      "name": "dataSource",
+      "type": "Datasource",
+      "value": "topTweets"
+     },
+     {
+      "name": "asynchronousMode",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "priority",
+      "type": "Integer",
+      "value": 5
+     },
+     {
+      "name": "refreshPeriod",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "htmlObject",
+      "type": "HtmlObject",
+      "value": ""
+     },
+     {
+      "name": "executeAtStart",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "preExecution",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postExecution",
+      "type": "JavaScript",
+      "value": "function(){\n    console.log(query);\n    document.getElementById('name1').innerHTML = query[0][1];\n    document.getElementById('username1').innerHTML = query[0][2];\n    document.getElementById('tweet1').innerHTML = query[0][3];\n    document.getElementById('count1').innerHTML = toNumber(query[0][4]);\n    document.getElementById('profilePicture1').innerHTML = \"<img src=\"+query[0][5]+\">\";\n    \n    document.getElementById('name2').innerHTML = query[2][1];\n    document.getElementById('username2').innerHTML = query[2][2];\n    document.getElementById('tweet2').innerHTML = query[2][3];\n    document.getElementById('count2').innerHTML = toNumber(query[2][4]);\n    document.getElementById('profilePicture2').innerHTML = \"<img src=\"+query[2][5]+\">\";\n    \n    document.getElementById('name3').innerHTML = query[5][1];\n    document.getElementById('username3').innerHTML = query[5][2];\n    document.getElementById('tweet3').innerHTML = query[5][3];\n    document.getElementById('count3').innerHTML = toNumber(query[5][4]);\n    document.getElementById('profilePicture3').innerHTML = \"<img src=\"+query[5][5]+\">\";\n} "
+     },
+     {
+      "name": "postFetch",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "preChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "tooltip",
+      "type": "Html",
+      "value": ""
+     }
+    ],
+    "type": "ComponentsQuery",
+    "typeDesc": "Query Component"
+   },
+   {
+    "id": "SCRIPT",
+    "name": "Scripts",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "type": "Label",
+      "value": "Scripts"
+     }
+    ],
+    "type": "Label",
+    "typeDesc": "<i>Group</i>"
+   },
+   {
+    "id": "f1c01ede-0a8f-7e57-a099-0f80cb34ce73",
+    "parent": "SCRIPT",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "toNumber"
+     },
+     {
+      "name": "javaScript",
+      "type": "JavaScript",
+      "value": "function toNumber(nStr){\n    nStr += '';\n\tx = nStr.split('.');\n\tx1 = x[0];\n\tx2 = x.length > 1 ? '.' + x[1] : '';\n\tvar rgx = /(\\d+)(\\d{3})/;\n\twhile (rgx.test(x1)) {\n\t\tx1 = x1.replace(rgx, '$1' + '.' + '$2');\n\t}\n\treturn x1 + x2;\n} "
+     }
+    ],
+    "type": "ComponentsFunction",
+    "typeDesc": "JavaScript function"
+   },
+   {
+    "id": "CHARTS",
+    "name": "Charts",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "type": "Label",
+      "value": "Charts"
+     }
+    ],
+    "type": "Label",
+    "typeDesc": "<i>Group</i>"
+   },
+   {
+    "id": "6eb65171-7fe3-3d11-c4dd-2be1cd9ab9b1",
+    "meta_cdwSupport": "true",
+    "parent": "CHARTS",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "timeChart"
+     },
+     {
+      "name": "title",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "listeners",
+      "type": "Listeners",
+      "value": "[]"
+     },
+     {
+      "name": "parameters",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "dataSource",
+      "type": "Datasource",
+      "value": "time_tweet"
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": "180"
+     },
+     {
+      "name": "priority",
+      "type": "Integer",
+      "value": 5
+     },
+     {
+      "name": "refreshPeriod",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "width",
+      "type": "Integer",
+      "value": "550"
+     },
+     {
+      "name": "colors",
+      "type": "Array",
+      "value": "[]"
+     },
+     {
+      "name": "htmlObject",
+      "type": "HtmlObject",
+      "value": "chart"
+     },
+     {
+      "name": "executeAtStart",
+      "type": "Boolean",
+      "value": "true"
+     },
+     {
+      "name": "preExecution",
+      "type": "JavaScript",
+      "value": "function(){\n    console.log(this);\n    var obj = this;\n    obj.chartDefinition.nullInterpolationMode = 'linear';\n    obj.chartDefinition.selectable = true;\n    obj.chartDefinition.hoverable =  true;\n    obj.chartDefinition.dotsVisible = true;\n    obj.chartDefinition.dot_shapeSize = 5;\n    obj.chartDefinition.tooltipClassName= 'light';\n    obj.chartDefinition.tooltipOpacity = 0.8;\n    obj.chartDefinition.legend = false;\n    obj.chartDefinition.axisLabel_font = 'normal 10px';\n    obj.chartDefinition.baseAxisLabel_textAngle = -Math.PI/4;\n    obj.chartDefinition.baseAxisLabel_textAlign = 'right';\n    obj.chartDefinition.baseAxisLabel_textBaseline = 'top';\n} "
+     },
+     {
+      "name": "postExecution",
+      "type": "JavaScript",
+      "value": "function(){\n    var comp = this, elm = $(\"#\"+comp.htmlObject);\n    $(window).resize(function(){\n        comp.chart.options.width = elm.width();\n        comp.chart.render(true, true, false);\n    });\n} "
+     },
+     {
+      "name": "postFetch",
+      "type": "JavaScript",
+      "value": "function(){\n    //console.log(this);\n    var obj = this;\n    this.chartDefinition.dimensions = {\n        series: {isHidden: true},\n        category: {label: \"Day\"},\n        value:      {label: \"Quantity\" }\n    };\n} "
+     },
+     {
+      "name": "preChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "postChange",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "extensionPoints",
+      "type": "EditorValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "tooltip",
+      "type": "Html",
+      "value": ""
+     },
+     {
+      "name": "animate",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "areasVisible",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "baseAxisBandSize",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "baseAxisBandSizeMax",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "baseAxisBandSizeMin",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "baseAxisBandSpacing",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "baseAxisBandSpacingMax",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "baseAxisBandSpacingMin",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "baseAxisClickAction",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "baseAxisDesiredTickCount",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "baseAxisDomainRoundMode",
+      "type": "cccBaseAxisDomainRoundModeCustom",
+      "value": "tick"
+     },
+     {
+      "name": "baseAxisDomainScope",
+      "type": "cccBaseAxisDomainScopeCustom",
+      "value": "global"
+     },
+     {
+      "name": "baseAxisDoubleClickAction",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "baseAxisFixedMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "baseAxisFixedMin",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "baseAxisFont",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "baseAxisGrid",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "baseAxisLabelSpacingMin",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "baseAxisMinorTicks",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "baseAxisOffset",
+      "type": "Float",
+      "value": 0
+     },
+     {
+      "name": "baseAxisOriginIsZero",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "baseAxisOverlappedLabelsMode",
+      "type": "cccBaseAxisOverlappedLabelsModeCustom",
+      "value": "hide"
+     },
+     {
+      "name": "baseAxisPosition",
+      "type": "cccBaseAxisPositionCustom",
+      "value": ""
+     },
+     {
+      "name": "baseAxisSize",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "baseAxisSizeMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "baseAxisTickExponentMax",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "baseAxisTickExponentMin",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "baseAxisTickFormatter",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "baseAxisTicks",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "baseAxisTickUnit",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "baseAxisTickUnitMax",
+      "type": "String",
+      "value": "Infinity"
+     },
+     {
+      "name": "baseAxisTickUnitMin",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "baseAxisTitle",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "baseAxisTitleAlign",
+      "type": "cccBaseAxisTitleAlignCustom",
+      "value": ""
+     },
+     {
+      "name": "baseAxisTitleFont",
+      "type": "String",
+      "value": "12px sans-serif"
+     },
+     {
+      "name": "baseAxisTitleMargins",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "baseAxisTitleSize",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "baseAxisTitleSizeMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "baseAxisTooltipAutoContent",
+      "type": "cccBaseAxisTooltipAutoContentCustom",
+      "value": "value"
+     },
+     {
+      "name": "baseAxisTooltipEnabled",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "baseAxisTooltipFormat",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "baseAxisVisible",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "baseAxisZeroLine",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "categoryRole",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "clearSelectionMode",
+      "type": "cccClearSelectionModeCustom",
+      "value": "emptySpaceClick"
+     },
+     {
+      "name": "clickable",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "clickAction",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "color2AxisColors",
+      "type": "Array",
+      "value": "[]"
+     },
+     {
+      "name": "color2AxisLegendClickMode",
+      "type": "cccColor2AxisLegendClickModeCustom",
+      "value": "toggleVisible"
+     },
+     {
+      "name": "color2AxisLegendDrawLine",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "color2AxisLegendDrawMarker",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "color2AxisLegendShape",
+      "type": "cccColor2AxisLegendShapeCustom",
+      "value": ""
+     },
+     {
+      "name": "color2AxisLegendVisible",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "color2AxisTransform",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "color2AxisUnbound",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "colorRole",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "colorTransform",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "colorUnbound",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "compatVersion",
+      "type": "Float",
+      "value": 2
+     },
+     {
+      "name": "contentMargins",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "contentPaddings",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "crosstabMode",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "ctrlSelectMode",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "dataCategoriesCount",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "dataIgnoreMetadataLabels",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "dataMeasuresInColumns",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "dataPartRole",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "dataSeparator",
+      "type": "String",
+      "value": "~"
+     },
+     {
+      "name": "dataWhere",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "dotsVisible",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "doubleClickAction",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "groupedLabelSep",
+      "type": "String",
+      "value": " ~ "
+     },
+     {
+      "name": "hoverable",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "ignoreNulls",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "interactive",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "isMultiValued",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "leafContentOverflow",
+      "type": "cccLeafContentOverflowCustom",
+      "value": "auto"
+     },
+     {
+      "name": "legend",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "legendAlign",
+      "type": "cccLegendAlignCustom",
+      "value": ""
+     },
+     {
+      "name": "legendClickMode",
+      "type": "cccLegendClickModeCustom",
+      "value": "toggleVisible"
+     },
+     {
+      "name": "legendDrawLine",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "legendDrawMarker",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "legendFont",
+      "type": "String",
+      "value": "10px sans-serif"
+     },
+     {
+      "name": "legendItemPadding",
+      "type": "String",
+      "value": "2.5"
+     },
+     {
+      "name": "legendItemSize",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "legendMargins",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "legendMarkerSize",
+      "type": "Float",
+      "value": 15
+     },
+     {
+      "name": "legendPaddings",
+      "type": "String",
+      "value": "5"
+     },
+     {
+      "name": "legendPosition",
+      "type": "cccLegendPositionCustom",
+      "value": "bottom"
+     },
+     {
+      "name": "legendShape",
+      "type": "cccLegendShapeCustom",
+      "value": ""
+     },
+     {
+      "name": "legendSize",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "legendSizeMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "legendTextMargin",
+      "type": "Float",
+      "value": 6
+     },
+     {
+      "name": "legendVisible",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "margins",
+      "type": "String",
+      "value": "3"
+     },
+     {
+      "name": "measuresIndexes",
+      "type": "Array",
+      "value": "[]"
+     },
+     {
+      "name": "multiChartColumnsMax",
+      "type": "Float",
+      "value": 3
+     },
+     {
+      "name": "multiChartIndexes",
+      "type": "Array",
+      "value": "[]"
+     },
+     {
+      "name": "multiChartMax",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "multiChartOverflow",
+      "type": "cccMultiChartOverflowCustom",
+      "value": "grow"
+     },
+     {
+      "name": "multiChartRole",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "multiChartSingleColFillsHeight",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "multiChartSingleRowFillsHeight",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "nullInterpolationMode",
+      "type": "cccNullInterpolationModeCustom",
+      "value": "none"
+     },
+     {
+      "name": "orientation",
+      "type": "cccOrientationCustom",
+      "value": "vertical"
+     },
+     {
+      "name": "ortho2AxisDesiredTickCount",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisDomainRoundMode",
+      "type": "cccOrtho2AxisDomainRoundModeCustom",
+      "value": "tick"
+     },
+     {
+      "name": "ortho2AxisDomainScope",
+      "type": "cccOrtho2AxisDomainScopeCustom",
+      "value": "global"
+     },
+     {
+      "name": "ortho2AxisFixedMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisFixedMin",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisFont",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisGrid",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "ortho2AxisLabelSpacingMin",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisMinorTicks",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "ortho2AxisOffset",
+      "type": "Float",
+      "value": 0
+     },
+     {
+      "name": "ortho2AxisOriginIsZero",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisOverlappedLabelsMode",
+      "type": "cccOrtho2AxisOverlappedLabelsModeCustom",
+      "value": "hide"
+     },
+     {
+      "name": "ortho2AxisPosition",
+      "type": "cccOrtho2AxisPositionCustom",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisSize",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisSizeMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisTickExponentMax",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisTickExponentMin",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisTickFormatter",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisTicks",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "ortho2AxisTickUnit",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisTickUnitMax",
+      "type": "String",
+      "value": "Infinity"
+     },
+     {
+      "name": "ortho2AxisTickUnitMin",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "ortho2AxisTitle",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisTitleAlign",
+      "type": "cccOrtho2AxisTitleAlignCustom",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisTitleFont",
+      "type": "String",
+      "value": "12px sans-serif"
+     },
+     {
+      "name": "ortho2AxisTitleMargins",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "ortho2AxisTitleSize",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisTitleSizeMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "ortho2AxisVisible",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "ortho2AxisZeroLine",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "orthoAxisDesiredTickCount",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisDomainRoundMode",
+      "type": "cccOrthoAxisDomainRoundModeCustom",
+      "value": "tick"
+     },
+     {
+      "name": "orthoAxisDomainScope",
+      "type": "cccOrthoAxisDomainScopeCustom",
+      "value": "global"
+     },
+     {
+      "name": "orthoAxisFixedMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisFixedMin",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisFont",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisGrid",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "orthoAxisLabelSpacingMin",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisMinorTicks",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "orthoAxisOffset",
+      "type": "Float",
+      "value": 0
+     },
+     {
+      "name": "orthoAxisOriginIsZero",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisOverlappedLabelsMode",
+      "type": "cccOrthoAxisOverlappedLabelsModeCustom",
+      "value": "hide"
+     },
+     {
+      "name": "orthoAxisPosition",
+      "type": "cccOrthoAxisPositionCustom",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisSize",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisSizeMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisTickExponentMax",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisTickExponentMin",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisTickFormatter",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisTicks",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "orthoAxisTickUnit",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisTickUnitMax",
+      "type": "String",
+      "value": "Infinity"
+     },
+     {
+      "name": "orthoAxisTickUnitMin",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "orthoAxisTitle",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisTitleAlign",
+      "type": "cccOrthoAxisTitleAlignCustom",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisTitleFont",
+      "type": "String",
+      "value": "12px sans-serif"
+     },
+     {
+      "name": "orthoAxisTitleMargins",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "orthoAxisTitleSize",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisTitleSizeMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "orthoAxisVisible",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "orthoAxisZeroLine",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "paddings",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "percentValueFormat",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "plot2",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "plot2AreasVisible",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "plot2ColorAxis",
+      "type": "Float",
+      "value": 2
+     },
+     {
+      "name": "plot2DotsVisible",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "plot2LinesVisible",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "plot2NullInterpolationMode",
+      "type": "cccPlot2NullInterpolationModeCustom",
+      "value": "none"
+     },
+     {
+      "name": "plot2OrthoAxis",
+      "type": "Float",
+      "value": 1
+     },
+     {
+      "name": "plot2Series",
+      "type": "Array",
+      "value": "[]"
+     },
+     {
+      "name": "plot2SeriesIndexes",
+      "type": "Array",
+      "value": -1
+     },
+     {
+      "name": "plot2Stacked",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "plot2TrendLabel",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "plot2TrendType",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "plot2ValuesAnchor",
+      "type": "cccPlot2ValuesAnchorCustom",
+      "value": ""
+     },
+     {
+      "name": "plot2ValuesFont",
+      "type": "String",
+      "value": "10px sans-serif"
+     },
+     {
+      "name": "plot2ValuesMask",
+      "type": "String",
+      "value": "{value}"
+     },
+     {
+      "name": "plot2ValuesVisible",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "plotFrameVisible",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "pointingMode",
+      "type": "cccPointingModeCustom",
+      "value": "near"
+     },
+     {
+      "name": "readers",
+      "type": "Array",
+      "value": "[]"
+     },
+     {
+      "name": "renderCallback",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "renderedCallback",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "selectable",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "selectionChangedAction",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "seriesInRows",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "seriesRole",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "smallAspectRatio",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "smallContentMargins",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "smallContentPaddings",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "smallHeight",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "smallMargins",
+      "type": "String",
+      "value": "2%"
+     },
+     {
+      "name": "smallPaddings",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "smallTitleAlign",
+      "type": "cccSmallTitleAlignCustom",
+      "value": ""
+     },
+     {
+      "name": "smallTitleFont",
+      "type": "String",
+      "value": "14px sans-serif"
+     },
+     {
+      "name": "smallTitleMargins",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "smallTitlePaddings",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "smallTitlePosition",
+      "type": "cccSmallTitlePositionCustom",
+      "value": "top"
+     },
+     {
+      "name": "smallTitleSize",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "smallTitleSizeMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "smallWidth",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "timeSeries",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "timeSeriesFormat",
+      "type": "String",
+      "value": "%Y-%m-%d"
+     },
+     {
+      "name": "titleAlign",
+      "type": "cccTitleAlignCustom",
+      "value": ""
+     },
+     {
+      "name": "titleFont",
+      "type": "String",
+      "value": "14px sans-serif"
+     },
+     {
+      "name": "titleMargins",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "titlePaddings",
+      "type": "String",
+      "value": "0"
+     },
+     {
+      "name": "titlePosition",
+      "type": "cccTitlePositionCustom",
+      "value": "top"
+     },
+     {
+      "name": "titleSize",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "titleSizeMax",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "tooltipArrowVisible",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "tooltipClassName",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "tooltipEnabled",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "tooltipFade",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "tooltipFollowMouse",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "tooltipFormat",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "tooltipGravity",
+      "type": "cccTooltipGravityCustom",
+      "value": ""
+     },
+     {
+      "name": "tooltipHtml",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "tooltipOffset",
+      "type": "Float",
+      "value": ""
+     },
+     {
+      "name": "tooltipOpacity",
+      "type": "Float",
+      "value": 0.9
+     },
+     {
+      "name": "tooltipUseCorners",
+      "type": "Boolean",
+      "value": ""
+     },
+     {
+      "name": "trendAreasVisible",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "trendColorAxis",
+      "type": "Float",
+      "value": 2
+     },
+     {
+      "name": "trendDotsVisible",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "trendLabel",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "trendLinesVisible",
+      "type": "Boolean",
+      "value": true
+     },
+     {
+      "name": "trendOrthoAxis",
+      "type": "Float",
+      "value": 1
+     },
+     {
+      "name": "trendStacked",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "trendType",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "trendValuesAnchor",
+      "type": "cccTrendValuesAnchorCustom",
+      "value": "right"
+     },
+     {
+      "name": "trendValuesFont",
+      "type": "String",
+      "value": "10px sans-serif"
+     },
+     {
+      "name": "trendValuesMask",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "trendValuesVisible",
+      "type": "Boolean",
+      "value": false
+     },
+     {
+      "name": "userSelectionAction",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "valueFormat",
+      "type": "JavaScript",
+      "value": ""
+     },
+     {
+      "name": "valueRole",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "valuesAnchor",
+      "type": "cccValuesAnchorCustom",
+      "value": ""
+     },
+     {
+      "name": "valuesFont",
+      "type": "String",
+      "value": "10px sans-serif"
+     },
+     {
+      "name": "valuesMask",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "valuesVisible",
+      "type": "Boolean",
+      "value": ""
+     }
+    ],
+    "type": "ComponentscccStackedLineChart",
+    "typeDesc": "CCC Stacked Line Chart"
+   }
+  ]
+ },
+ "datasources": {
+  "rows": [
+   {
+    "id": "KETTLE",
+    "name": "KETTLE Queries",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "type": "Label",
+      "value": "KETTLE Queries"
+     }
+    ],
+    "type": "Label",
+    "typeDesc": "<i>Group</i>"
+   },
+   {
+    "id": "18645038-5cd6-f2af-33b2-7ccb7a36ee94",
+    "meta": "CDA",
+    "meta_conntype": "kettle.TransFromFile",
+    "meta_datype": "kettle",
+    "parent": "KETTLE",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "time_tweet"
+     },
+     {
+      "name": "ktrFile",
+      "type": "KtrPath",
+      "value": "../endpoints/kettle/time_tweet.ktr"
+     },
+     {
+      "name": "access",
+      "type": "Access",
+      "value": "public"
+     },
+     {
+      "name": "query",
+      "type": "DefaultQuery",
+      "value": "Select values"
+     },
+     {
+      "name": "parameters",
+      "type": "CdaParameters",
+      "value": "[]"
+     },
+     {
+      "name": "variables",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "type": "CdaCalculatedColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacolumns",
+      "type": "CdaColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "output",
+      "type": "IndexArray",
+      "value": "[]"
+     },
+     {
+      "name": "outputMode",
+      "type": "OutputMode",
+      "value": "include"
+     },
+     {
+      "name": "cacheKeys",
+      "type": "CacheKeysValues",
+      "value": "[]"
+     },
+     {
+      "name": "cacheDuration",
+      "type": "Integer",
+      "value": 3600
+     },
+     {
+      "name": "cache",
+      "type": "Boolean",
+      "value": "true"
+     }
+    ],
+    "type": "Componentskettle_kettleTransFromFile",
+    "typeDesc": "kettle over kettleTransFromFile"
+   },
+   {
+    "id": "ceb8cb97-66c7-d86d-9fbf-b4a4d8e22c1b",
+    "meta": "CDA",
+    "meta_conntype": "kettle.TransFromFile",
+    "meta_datype": "kettle",
+    "parent": "KETTLE",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "topTweets"
+     },
+     {
+      "name": "ktrFile",
+      "type": "KtrPath",
+      "value": "../endpoints/kettle/top10tweets.ktr"
+     },
+     {
+      "name": "access",
+      "type": "Access",
+      "value": "public"
+     },
+     {
+      "name": "query",
+      "type": "DefaultQuery",
+      "value": "Select values"
+     },
+     {
+      "name": "parameters",
+      "type": "CdaParameters",
+      "value": "[]"
+     },
+     {
+      "name": "variables",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "type": "CdaCalculatedColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacolumns",
+      "type": "CdaColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "output",
+      "type": "IndexArray",
+      "value": "[]"
+     },
+     {
+      "name": "outputMode",
+      "type": "OutputMode",
+      "value": "include"
+     },
+     {
+      "name": "cacheKeys",
+      "type": "CacheKeysValues",
+      "value": "[]"
+     },
+     {
+      "name": "cacheDuration",
+      "type": "Integer",
+      "value": 3600
+     },
+     {
+      "name": "cache",
+      "type": "Boolean",
+      "value": "true"
+     }
+    ],
+    "type": "Componentskettle_kettleTransFromFile",
+    "typeDesc": "kettle over kettleTransFromFile"
+   },
+   {
+    "id": "e1c0974b-fd40-04ab-8906-bbea8126d52d",
+    "meta": "CDA",
+    "meta_conntype": "kettle.TransFromFile",
+    "meta_datype": "kettle",
+    "parent": "KETTLE",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "top_hashtags"
+     },
+     {
+      "name": "ktrFile",
+      "type": "KtrPath",
+      "value": "../endpoints/kettle/top10hashtag.ktr"
+     },
+     {
+      "name": "access",
+      "type": "Access",
+      "value": "public"
+     },
+     {
+      "name": "query",
+      "type": "DefaultQuery",
+      "value": "Select values"
+     },
+     {
+      "name": "parameters",
+      "type": "CdaParameters",
+      "value": "[]"
+     },
+     {
+      "name": "variables",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "type": "CdaCalculatedColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacolumns",
+      "type": "CdaColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "output",
+      "type": "IndexArray",
+      "value": "[]"
+     },
+     {
+      "name": "outputMode",
+      "type": "OutputMode",
+      "value": "include"
+     },
+     {
+      "name": "cacheKeys",
+      "type": "CacheKeysValues",
+      "value": "[]"
+     },
+     {
+      "name": "cacheDuration",
+      "type": "Integer",
+      "value": 3600
+     },
+     {
+      "name": "cache",
+      "type": "Boolean",
+      "value": "true"
+     }
+    ],
+    "type": "Componentskettle_kettleTransFromFile",
+    "typeDesc": "kettle over kettleTransFromFile"
+   },
+   {
+    "id": "d2309258-fed5-44fa-cbec-8e6445d82798",
+    "meta": "CDA",
+    "meta_conntype": "kettle.TransFromFile",
+    "meta_datype": "kettle",
+    "parent": "KETTLE",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "count_url"
+     },
+     {
+      "name": "ktrFile",
+      "type": "KtrPath",
+      "value": "../endpoints/kettle/count_url.ktr"
+     },
+     {
+      "name": "access",
+      "type": "Access",
+      "value": "public"
+     },
+     {
+      "name": "query",
+      "type": "DefaultQuery",
+      "value": "Select values"
+     },
+     {
+      "name": "parameters",
+      "type": "CdaParameters",
+      "value": "[]"
+     },
+     {
+      "name": "variables",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "type": "CdaCalculatedColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacolumns",
+      "type": "CdaColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "output",
+      "type": "IndexArray",
+      "value": "[]"
+     },
+     {
+      "name": "outputMode",
+      "type": "OutputMode",
+      "value": "include"
+     },
+     {
+      "name": "cacheKeys",
+      "type": "CacheKeysValues",
+      "value": "[]"
+     },
+     {
+      "name": "cacheDuration",
+      "type": "Integer",
+      "value": 3600
+     },
+     {
+      "name": "cache",
+      "type": "Boolean",
+      "value": "true"
+     }
+    ],
+    "type": "Componentskettle_kettleTransFromFile",
+    "typeDesc": "kettle over kettleTransFromFile"
+   },
+   {
+    "id": "944e282a-9d65-1b81-dc7d-9c7eaf7da554",
+    "meta": "CDA",
+    "meta_conntype": "kettle.TransFromFile",
+    "meta_datype": "kettle",
+    "parent": "KETTLE",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "count_hashtag"
+     },
+     {
+      "name": "ktrFile",
+      "type": "KtrPath",
+      "value": "../endpoints/kettle/count_hashtags.ktr"
+     },
+     {
+      "name": "access",
+      "type": "Access",
+      "value": "public"
+     },
+     {
+      "name": "query",
+      "type": "DefaultQuery",
+      "value": "Select values"
+     },
+     {
+      "name": "parameters",
+      "type": "CdaParameters",
+      "value": "[]"
+     },
+     {
+      "name": "variables",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "type": "CdaCalculatedColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacolumns",
+      "type": "CdaColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "output",
+      "type": "IndexArray",
+      "value": "[]"
+     },
+     {
+      "name": "outputMode",
+      "type": "OutputMode",
+      "value": "include"
+     },
+     {
+      "name": "cacheKeys",
+      "type": "CacheKeysValues",
+      "value": "[]"
+     },
+     {
+      "name": "cacheDuration",
+      "type": "Integer",
+      "value": 3600
+     },
+     {
+      "name": "cache",
+      "type": "Boolean",
+      "value": "true"
+     }
+    ],
+    "type": "Componentskettle_kettleTransFromFile",
+    "typeDesc": "kettle over kettleTransFromFile"
+   },
+   {
+    "id": "c722b83f-7eef-d5fc-0b86-9e8ec8d089d0",
+    "meta": "CDA",
+    "meta_conntype": "kettle.TransFromFile",
+    "meta_datype": "kettle",
+    "parent": "KETTLE",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "count_mentions"
+     },
+     {
+      "name": "ktrFile",
+      "type": "KtrPath",
+      "value": "../endpoints/kettle/count_mentions.ktr"
+     },
+     {
+      "name": "access",
+      "type": "Access",
+      "value": "public"
+     },
+     {
+      "name": "query",
+      "type": "DefaultQuery",
+      "value": "Select values"
+     },
+     {
+      "name": "parameters",
+      "type": "CdaParameters",
+      "value": "[]"
+     },
+     {
+      "name": "variables",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "type": "CdaCalculatedColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacolumns",
+      "type": "CdaColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "output",
+      "type": "IndexArray",
+      "value": "[]"
+     },
+     {
+      "name": "outputMode",
+      "type": "OutputMode",
+      "value": "include"
+     },
+     {
+      "name": "cacheKeys",
+      "type": "CacheKeysValues",
+      "value": "[]"
+     },
+     {
+      "name": "cacheDuration",
+      "type": "Integer",
+      "value": 3600
+     },
+     {
+      "name": "cache",
+      "type": "Boolean",
+      "value": "true"
+     }
+    ],
+    "type": "Componentskettle_kettleTransFromFile",
+    "typeDesc": "kettle over kettleTransFromFile"
+   },
+   {
+    "id": "29cdad8c-6538-9adf-a3b3-93ab4e6dabb3",
+    "meta": "CDA",
+    "meta_conntype": "kettle.TransFromFile",
+    "meta_datype": "kettle",
+    "parent": "KETTLE",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "count_tweets"
+     },
+     {
+      "name": "ktrFile",
+      "type": "KtrPath",
+      "value": "../endpoints/kettle/count_tweets.ktr"
+     },
+     {
+      "name": "access",
+      "type": "Access",
+      "value": "public"
+     },
+     {
+      "name": "query",
+      "type": "DefaultQuery",
+      "value": "Select values"
+     },
+     {
+      "name": "parameters",
+      "type": "CdaParameters",
+      "value": "[]"
+     },
+     {
+      "name": "variables",
+      "type": "ValuesArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "type": "CdaCalculatedColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacolumns",
+      "type": "CdaColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "output",
+      "type": "IndexArray",
+      "value": "[]"
+     },
+     {
+      "name": "outputMode",
+      "type": "OutputMode",
+      "value": "include"
+     },
+     {
+      "name": "cacheKeys",
+      "type": "CacheKeysValues",
+      "value": "[]"
+     },
+     {
+      "name": "cacheDuration",
+      "type": "Integer",
+      "value": 3600
+     },
+     {
+      "name": "cache",
+      "type": "Boolean",
+      "value": "true"
+     }
+    ],
+    "type": "Componentskettle_kettleTransFromFile",
+    "typeDesc": "kettle over kettleTransFromFile"
+   }
+  ]
+ },
+ "filename": "/system/TwitterAnalytics/dashboards/Social+Analytics.cdfde",
+ "layout": {
+  "rows": [
+   {
+    "id": "8eebf0f5-c987-a98d-16a1-adfc25d7718b",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "untitled"
+     },
+     {
+      "name": "resourceFile",
+      "type": "ResourceFile",
+      "value": "/pentaho/api/repos/TwitterAnalytics/static/custom/css/untitled2.css"
+     },
+     {
+      "name": "resourceType",
+      "type": "Label",
+      "value": "Css"
+     }
+    ],
+    "type": "LayoutResourceFile",
+    "typeDesc": "Resource"
+   },
+   {
+    "id": "3f95639a-cba4-b25f-2b3d-53384023156d",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "main"
+     },
+     {
+      "name": "resourceCode",
+      "type": "Resource",
+      "value": "\np.username {\n    margin-top:15px;\n}\n\np.name {\n    margin-top: 10px;\n    font-size:14px;\n} \n\n.image-container .image-overlay p { \n    margin-top: 25px;\n}\n\np.tweet{\n    font-size:14px;\n}\n\nimg{\n    width: 50px;\n    height: 50px;\n} "
+     },
+     {
+      "name": "resourceType",
+      "type": "Label",
+      "value": "Css"
+     }
+    ],
+    "type": "LayoutResourceCode",
+    "typeDesc": "Resource"
+   },
+   {
+    "id": "b76d2fa5-892f-492a-04d9-17a58ea463c0",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": ""
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "roundCorners",
+      "type": "RoundCorners",
+      "value": ""
+     },
+     {
+      "name": "textAlign",
+      "type": "TextAlign",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutRow",
+    "typeDesc": "Row"
+   },
+   {
+    "id": "0d13f97b-4e37-3d84-2c50-d24bde6d91e2",
+    "parent": "b76d2fa5-892f-492a-04d9-17a58ea463c0",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": ""
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "type": "String",
+      "value": "12"
+     },
+     {
+      "name": "bootstrapSmall",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapMedium",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapLarge",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapCssClass",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "roundCorners",
+      "type": "RoundCorners",
+      "value": ""
+     },
+     {
+      "name": "textAlign",
+      "type": "TextAlign",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column"
+   },
+   {
+    "id": "36dc3f79-b137-8854-7717-c40178ab42a0",
+    "parent": "0d13f97b-4e37-3d84-2c50-d24bde6d91e2",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": ""
+     },
+     {
+      "name": "html",
+      "type": "Html",
+      "value": "<!DOCTYPE html>\n    <head>\n\t    <meta charset=\"UTF-8\">\n\t    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\t    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t    <meta name=\"description\" content=\"\">\n\t    <meta name=\"author\" content=\"\">\n\n\t    <title>Social Analytics</title>\n\t\t<link rel=\"stylesheet\" href=\"https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css\">\n\t\t<link rel=\"stylesheet\" href=\"https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css\">\n\t\t<link rel=\"stylesheet\" href=\"https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-rtl.min.css\">\n\t\t<link rel=\"stylesheet\" href=\"https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-schemes.min.css\">\n\t\t<link rel=\"stylesheet\" href=\"https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-responsive.min.css\">\n\t\t<script src=\"https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/js/metro.min.js\"></script>\n\t\t<script src=\"https://use.fontawesome.com/aa3426b8f3.js\"></script>\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"/pentaho/api/repos/TwitterAnalytics/static/custom/css/untitled2.css\">\n\t</head>\n\t<body>\n\t\t<!--- TITLE -->\n\t\t<div align=\"center\">\n\t\t\t<div class=\"grid\">\n\t\t\t\t<div class=\"row cells12\">\n\t\t\t\t\t<div class=\"cell colspan6\">\n\t\t\t\t\t\t<h1 class=\"title1\">Twitter Analytics</h1>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"cell colspan6\">\n\t\t\t\t\t\t<h1 class=\"title2\">Theme: Dilma</h1>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<hr>\n\t\t<!--- CONTENT -->\n\t\t<div class=\"grid\">\n\t\t\t<div class=\"row cells10\">\n\t\t\t\t<!--<div class=\"cell colspan1\">\n\t\t\t\t</div>-->\n\t\t\t\t<!-- LEFT SIDE -->\n\t\t\t\t<div class=\"cell colspan2\">\n\t\t\t\t\t<div class=\"grid\">\n\t\t\t\t\t\t<div class=\"tile-wide fg-white\">\n\t\t\t\t\t\t\t<div class=\"tile-content\">\n\t\t\t\t\t\t        <div class=\"image-container\">\n\t\t\t\t\t\t            <div class=\"frame\" id=\"bg-blue2\">\n\t\t\t\t\t\t                <i class=\"fa fa-comments\" aria-hidden=\"true\"></i>\n\t\t\t\t\t\t            </div>\n\t\t\t\t\t\t            <div class=\"image-overlay\"><p id=\"tweets\"><p></div>\n\t\t\t\t\t\t        </div>\n\t\t\t\t\t\t    </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"grid\">\n\t\t\t\t\t\t<div class=\"tile-wide fg-white\">\n\t\t\t\t\t\t\t<div class=\"tile-content\">\n\t\t\t\t\t\t        <div class=\"image-container\">\n\t\t\t\t\t\t            <div class=\"frame\" id=\"bg-green2\">\n\t\t\t\t\t\t                <i class=\"fa fa-hashtag\" aria-hidden=\"true\"></i>\n\t\t\t\t\t\t            </div>\n\t\t\t\t\t\t            <div class=\"image-overlay\"><p id=\"hashtag\"><p></div>\n\t\t\t\t\t\t        </div>\n\t\t\t\t\t\t    </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"grid\">\n\t\t\t\t\t\t<div class=\"tile-wide fg-white\">\n\t\t\t\t\t\t\t<div class=\"tile-content\">\n\t\t\t\t\t\t        <div class=\"image-container\">\n\t\t\t\t\t\t            <div class=\"frame\" id=\"bg-pink2\">\n\t\t\t\t\t\t                <i class=\"fa fa-at\" aria-hidden=\"true\"></i>\n\t\t\t\t\t\t            </div>\n\t\t\t\t\t\t            <div class=\"image-overlay\"><p id=\"mentions\"><p></div>\n\t\t\t\t\t\t        </div>\n\t\t\t\t\t\t    </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"grid\">\n\t\t\t\t\t\t<div class=\"tile-wide fg-white\">\n\t\t\t\t\t\t\t<div class=\"tile-content\">\n\t\t\t\t\t\t        <div class=\"image-container\">\n\t\t\t\t\t\t            <div class=\"frame\" id=\"bg-orange2\">\n\t\t\t\t\t\t                <i class=\"fa fa-link\" aria-hidden=\"true\"></i>\n\t\t\t\t\t\t            </div>\n\t\t\t\t\t\t            <div class=\"image-overlay\"><p id=\"url\"><p></div>\n\t\t\t\t\t\t        </div>\n\t\t\t\t\t\t    </div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<!-- MIDDLE -->\n\t\t        <div class=\"cell colspan5\">\n\t\t        \t<div class=\"grid\">\n\t\t        \t\t<div class=\"chart\" id=\"chart\"></div>\n\t\t        \t</div>\n\t\t        \t<div align=\"center\">\n\t\t        \t\t<div class=\"grid\">\n\t\t\t        \t\t<div class=\"row cells12\">\n\t\t\t        \t\t\t<div class=\"cell colspan12\">\n\t\t\t        \t\t\t\t<div class=\"grid\">\n\t\t\t        \t\t\t\t\t<h2>Top Tweets</h2>\n\t\t\t        \t\t\t\t</div>\n\t\t\t        \t\t\t\t<div class=\"grid\">\n\t\t\t        \t\t\t\t\t<div class=\"row cells12\">\n\t\t\t\t\t\t                    <div class=\"cell colspan2\">\n\t\t\t        \t\t\t\t\t\t\t<div class=\"profilePicture\" id=\"profilePicture1\"></div>\n\t\t\t        \t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t<div class=\"cell colspan6\">\n\t\t\t        \t\t\t\t\t\t\t<p class=\"name\" id=\"name1\"></p>\n\t\t\t        \t\t\t\t\t\t\t<p class=\"username\" id=\"username1\"></p>\n\t\t\t        \t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t<div class=\"cell colspan4\">\n\t\t\t        \t\t\t\t\t\t\t<div class=\"row cells12\">\n\t\t\t        \t\t\t\t\t\t\t\t<div class=\"cell colspan10\">\n\t\t\t        \t\t\t\t\t\t\t\t\t<p class=\"count\" id=\"count1\"></p>\n\t\t\t        \t\t\t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t\t\t<div class=\"cell colspan2\">\n\t\t\t        \t\t\t\t\t\t\t\t\t<span class=\"mif-star-full\" id=\"star\"></span>\n\t\t\t        \t\t\t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t<p class=\"tweet\" id=\"tweet1\"></p>\n\t\t\t        \t\t\t\t\t<br>\n\t\t\t        \t\t\t\t\t<hr class=\"users\">\n\t\t\t        \t\t\t\t</div>\n\t\t\t        \t\t\t    <div class=\"grid\">\n    \t\t        \t\t\t\t\t<div class=\"row cells12\">\n\t\t\t\t\t\t                    <div class=\"cell colspan2\">\n\t\t\t        \t\t\t\t\t\t\t<div class=\"profilePicture\" id=\"profilePicture2\"></div>\n\t\t\t        \t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t<div class=\"cell colspan6\">\n\t\t\t        \t\t\t\t\t\t\t<p class=\"name\" id=\"name2\"></p>\n\t\t\t        \t\t\t\t\t\t\t<p class=\"username\" id=\"username2\"></p>\n\t\t\t        \t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t<div class=\"cell colspan4\">\n\t\t\t        \t\t\t\t\t\t\t<div class=\"row cells12\">\n\t\t\t        \t\t\t\t\t\t\t\t<div class=\"cell colspan10\">\n\t\t\t        \t\t\t\t\t\t\t\t\t<p class=\"count\" id=\"count2\"></p>\n\t\t\t        \t\t\t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t\t\t<div class=\"cell colspan2\">\n\t\t\t        \t\t\t\t\t\t\t\t\t<span class=\"mif-star-full\" id=\"star\"></span>\n\t\t\t        \t\t\t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t<p class=\"tweet\" id=\"tweet2\"></p>\n\t\t\t        \t\t\t\t\t<br>\n\t\t\t        \t\t\t\t\t<hr class=\"users\">\n\t\t\t        \t\t\t\t</div>\n    \t\t        \t\t\t    <div class=\"grid\">\n        \t        \t\t\t\t\t<div class=\"row cells12\">\n\t\t\t\t\t\t                    <div class=\"cell colspan2\">\n\t\t\t        \t\t\t\t\t\t\t<div class=\"profilePicture\" id=\"profilePicture3\"></div>\n\t\t\t        \t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t<div class=\"cell colspan6\">\n\t\t\t        \t\t\t\t\t\t\t<p class=\"name\" id=\"name3\"></p>\n\t\t\t        \t\t\t\t\t\t\t<p class=\"username\" id=\"username3\"></p>\n\t\t\t        \t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t<div class=\"cell colspan4\">\n\t\t\t        \t\t\t\t\t\t\t<div class=\"row cells12\">\n\t\t\t        \t\t\t\t\t\t\t\t<div class=\"cell colspan10\">\n\t\t\t        \t\t\t\t\t\t\t\t\t<p class=\"count\" id=\"count3\"></p>\n\t\t\t        \t\t\t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t\t\t<div class=\"cell colspan2\">\n\t\t\t        \t\t\t\t\t\t\t\t\t<span class=\"mif-star-full\" id=\"star\"></span>\n\t\t\t        \t\t\t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t</div>\n\t\t\t        \t\t\t\t\t<p class=\"tweet\" id=\"tweet3\"></p>\n\t\t\t        \t\t\t\t\t<br>\n\t\t\t        \t\t\t\t\t<hr class=\"users\">\n\t\t\t        \t\t\t\t</div>\n\t\t\t        \t\t\t</div>\n\t\t        \t\t\t</div>\n\t\t        \t\t</div>\n\t\t        \t</div>\n                </div>\n\t\t        <!-- RIGHT SIDE -->\n\t\t        <div class=\"cell colspan3\">\n                    <div align=\"center\">\n    \t        \t\t<div class=\"grid\">\n\t\t\t        \t\t<div class=\"row cells12\">\n\t\t\t        \t\t\t<div class=\"cell colspan12\">\n\t\t\t        \t\t\t\t<div class=\"popover marker-on-bottom bg-rightSide  fg-white\">\n    \t\t\t\t\t                <h2>Top 10 Hashtags</h2>\n                                        <hr class=\"hashHr\">\n\t\t\t\t\t\t                <h3 id=\"topHashtags\"></h3>\n\t\t\t\t\t\t            </div>\n\t\t\t        \t\t\t</div>\n\t\t        \t\t\t</div>\n\t\t        \t\t</div>\n\t\t        \t</div>\n\t\t        </div>\n\t\t\t</div>\n\t\t</div>\n        <div class=\"div\" id=\"div\"></div>\n\t</body>\n</html> "
+     },
+     {
+      "name": "fontSize",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "color",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutHtml",
+    "typeDesc": "Html"
+   }
+  ],
+  "title": "CDF - Sample structure"
+ }
+}
