@@ -1,0 +1,31 @@
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+.modalClass {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;    
+    background: white;
+    -moz-opacity: 0.7; /* makes the div transparent, so you have a cool overlay effect */
+    filter: alpha(opacity=70);
+    opacity: .70;
+}
+.ajaxload{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height:50%;
+    left: 25%; /* positions the div half way horizontally */
+    top: 25%;
+    position: fixed;
+    text-align:center;
+    z-index: 100;
+    display:block;
+}

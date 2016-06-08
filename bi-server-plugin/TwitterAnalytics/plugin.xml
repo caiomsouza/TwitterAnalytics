@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin title="TwitterAnalytics" loader="DEFAULT">
+<overlays>
+		<overlay id="startup.TwitterAnalytics" resourcebundle="content/TwitterAnalytics/resources/lang/messages">
+			<menubar id="toolsmenu">
+	        	<menuitem id="TwitterAnalytics" label="${Launcher.TwitterAnalytics}" command="mantleXulHandler.openUrl('${Launcher.TwitterAnalytics}','${Launcher.TwitterAnalytics_TOOLTIP}','plugin/TwitterAnalytics/api/default')"/>
+	      	</menubar>
+	    </overlay>
+	</overlays>
+	<lifecycle-listener class="pt.webdetails.cpk.CpkLifecycleListener"/>
+	<static-paths>
+		<static-path url="/TwitterAnalytics/static" localFolder="static"/>
+		<static-path url="/TwitterAnalytics/resources" localFolder="resources"/>
+	</static-paths>
+	<content-types>
+		<content-type>
+			<title>TwitterAnalytics</title>
+			<description></description>
+			<company name="" url="" logo="@PLUGIN_COMPANY_LOGO@"></company>
+		</content-type>
+	</content-types>
+	<content-generator
+		id="TwitterAnalytics"
+		title="TwitterAnalytics"
+		type="TwitterAnalytics"
+		class="pt.webdetails.cpk.CpkContentGenerator"/>
+	<!-- Menu entry -->
+	<menu-items>
+		<!--<menu-item id="TwitterAnalytics_main" anchor="tools-submenu" label="TwitterAnalytics" command="content/TwitterAnalytics/" type="MENU_ITEM" how="LAST_CHILD"/>-->
+	</menu-items>
+</plugin>

@@ -1,0 +1,244 @@
+{
+ "components": {
+  "rows": []
+ },
+ "datasources": {
+  "rows": [
+   {
+    "id": "SQL",
+    "name": "SQL Queries",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "Group",
+      "type": "Label",
+      "value": "SQL Queries"
+     }
+    ],
+    "type": "Label",
+    "typeDesc": "<i>Group</i>"
+   },
+   {
+    "id": "0a56c773-c21a-33cb-c9aa-716d1c31731a",
+    "meta": "CDA",
+    "meta_conntype": "sql.jndi",
+    "meta_datype": "sql",
+    "parent": "SQL",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "dummy"
+     },
+     {
+      "name": "access",
+      "type": "Access",
+      "value": "public"
+     },
+     {
+      "name": "jndi",
+      "type": "Jndi",
+      "value": ""
+     },
+     {
+      "name": "query",
+      "type": "SqlQuery",
+      "value": ""
+     },
+     {
+      "name": "parameters",
+      "type": "CdaParameters",
+      "value": "[]"
+     },
+     {
+      "name": "cdacalculatedcolumns",
+      "type": "CdaCalculatedColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "cdacolumns",
+      "type": "CdaColumnsArray",
+      "value": "[]"
+     },
+     {
+      "name": "output",
+      "type": "IndexArray",
+      "value": "[]"
+     },
+     {
+      "name": "outputMode",
+      "type": "OutputMode",
+      "value": "include"
+     },
+     {
+      "name": "cacheKeys",
+      "value": "[]",
+      "type": "CacheKeysValues"
+     },
+     {
+      "name": "cacheDuration",
+      "type": "Integer",
+      "value": 3600
+     },
+     {
+      "name": "cache",
+      "type": "Boolean",
+      "value": "true"
+     }
+    ],
+    "type": "Componentssql_sqlJndi",
+    "typeDesc": "sql over sqlJndi"
+   }
+  ]
+ },
+ "filename": "/system/TwitterAnalytics/dashboards/BubblePlotly.cdfde",
+ "layout": {
+  "rows": [
+   {
+    "id": "9d7c815f-d460-ed2e-d255-5a67eca1ebd4",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "UnIqEiD",
+    "properties": [
+     {
+      "name": "name",
+      "value": "body",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "87823001-a317-d3af-8cf5-a29bdf454f06",
+    "type": "LayoutColumn",
+    "typeDesc": "Column",
+    "parent": "9d7c815f-d460-ed2e-d255-5a67eca1ebd4",
+    "properties": [
+     {
+      "name": "name",
+      "value": "colbody",
+      "type": "Id"
+     },
+     {
+      "name": "columnSpan",
+      "value": "22",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrepend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnAppend",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "columnPrependTop",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnAppendBottom",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "columnBigBorder",
+      "value": "false",
+      "type": "Boolean"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "e9beaead-4b0b-0ab0-d606-509ef6104509",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "87823001-a317-d3af-8cf5-a29bdf454f06",
+    "properties": [
+     {
+      "name": "name",
+      "value": "BubblePlotly",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<head>\n  <!-- Plotly.js -->\n  <script src=\"https://cdn.plot.ly/plotly-latest.min.js\"></script>\n</head>\n\n<body>\n  \n  <div id=\"myDiv\" style=\"width: 800px; height: 800px;\"><!-- Plotly chart will be drawn inside this DIV --></div>\n    \n    \n<script>\n    \n    // Some data omitted for clarity on screen!\nvar data = [{\n  name: \"Mais do que 100% do orcado\",\n  text: [\"P.TEC.16.0001\", \"Projeto X2\", \"Projeto X3\", \"Projeto X4\"],\n  marker: {\n    sizemode: \"area\",\n    sizeref: 200000,\n    size : [31889923, 708573, 150448339, 22211743]\n  },\n  mode: \"markers\",\n  y: [974.5803384, 29796.04834, 1391.253792, 2280.769906],\n  x: [43.828, 75.635, 64.062, 62.698],\n  uid: \"99da6d\"\n},{\n  name: \"Entre 80% e 100% do orcado\",\n  text: [\"Projeto 1\", \"Projeto 2\", \"Projeto 3\", \"Projeto 4\"],\n  marker: {\n    sizemode: \"area\",\n    sizeref: 200000,\n    size : [31889923, 708573, 150448339, 22211743]\n  },\n  mode: \"markers\",\n  y: [974.5803384, 29796.04834, 1391.253792, 2280.769906],\n  x: [43.828, 75.635, 64.062, 62.698],\n  uid: \"99da6d\"\n},{\n  name:\"Entre 50% e 80% do orcado\",\n  text: [\"Projeto 6\", \"Projeto 7\", \"Projeto 20\", \"Projeto 21\"],\n  marker: {\n    sizemode: \"area\",\n    sizeref: 200000,\n    size: [3600523, 8199783, 10392226, 60776238]\n  },\n  mode: \"markers\",\n  y: [5937.029526, 36126.4927, 33692.60508, 33203.26128],\n  x: [76.423, 79.829, 79.441, 79.425],\n  uid: \"9d3ba4\"\n},{\n  name: \"Entre 0% e 50% do orcado\",\n  text: [\"Projeto 55\",\"Projeto TC 1\"],\n  marker: {\n    sizemode: \"area\",\n    sizeref: 200000,\n    size: [2434176, 4115771]\n  },\n  mode: \"markers\",\n  y: [34435.36744, 25185.00911],\n  x: [81.235, 80.204],\n  uid: \"f9fb74\"\n},{\n  name: \"0% do orcado\",\n  text: [\"Projeto 33\",\"Projeto 44\"],\n  marker: {\n    sizemode: \"area\",\n    sizeref: 200000,\n    size: [20434176, 4115771]\n  },\n  mode: \"markers\",\n  y: [34435.36744, 25185.00911],\n  x: [81.235, 80.204],\n  uid: \"f9fb74\"\n}];\n\nvar layout = {\n  xaxis: {\n    title: 'Orcado - Em milhoes (R$)'\n  },\n  yaxis: {\n    title: 'BG (Em Aberto + Requisicao + Pedido + Realizado)',\n    //type: 'log'\n  },\n  margin: {\n    t: 20\n  },\n  hovermode: 'closest'\n};\n\nPlotly.newPlot('myDiv', data, layout);        \n            \n        \n</script> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   }
+  ],
+  "title": "BubblePlotly"
+ }
+}

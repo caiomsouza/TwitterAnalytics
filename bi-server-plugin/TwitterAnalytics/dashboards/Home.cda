@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="sqlTableTwitter" type="sql.jndi">
+         <Jndi>twitterdb</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" connection="sqlTableTwitter" id="sqlTableTwitter" type="sql">
+      <Cache duration="3600" enabled="true"/>
+      <Columns/>
+      <Parameters/>
+      <Query><![CDATA[SELECT 
+    created,
+    screen_name,
+    '1000' as followers, 
+    RAND() as user_relevance,
+    text as text_twitter,
+    RAND() as text_sentiment
+FROM tweets;]]></Query>
+   </DataAccess>
+</CDADescriptor>
