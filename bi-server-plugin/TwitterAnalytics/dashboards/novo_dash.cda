@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><CDADescriptor>
+  <DataSources>
+    <Connection id="data" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="hs_01" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="bar_count" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="hashtag_04" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="hashtag_03" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="hashtag_02" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="hashtag_01" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+    <Connection id="Mapas" type="sql.jndi">
+      <Jndi>twitterdb</Jndi>
+    </Connection>
+  </DataSources>
+  <DataAccess access="public" connection="data" id="data" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[select curdate();]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="hs_01" id="hs_01" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[SELECT  hashtag_1, count(*) as total 
+FROM twitterdb.tweets
+where hashtag_1 is not null
+group by hashtag_1
+order by 2 DESC LIMIT 10;]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="bar_count" id="bar_count" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters>
+      <Parameter default="NaoVaiTerGolpe" name="hashtag" type="String"/>
+    </Parameters>
+    <Query><![CDATA[SELECT `name`, COUNT(*) as total 
+from tweets 
+WHERE hashtag_1 = ${hashtag} 
+GROUP BY `name` ORDER BY 2 DESC LIMIT 10;]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="hashtag_04" id="hashtag_04" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[SELECT 
+    COUNT(*), 
+	hashtag_1 
+from twitterdb.tweets
+
+where  hashtag_1 = 'SafadaoPresidente']]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="hashtag_03" id="hashtag_03" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[SELECT 
+    COUNT(*), 
+	hashtag_1 
+from twitterdb.tweets
+where  hashtag_1 = 'impeachment']]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="hashtag_02" id="hashtag_02" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[SELECT 
+    COUNT(*), 
+	hashtag_1 
+from twitterdb.tweets
+
+where  hashtag_1 = 'impeachmentDilma']]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="hashtag_01" id="hashtag_01" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[SELECT 
+    COUNT(*), 
+	hashtag_1 
+from twitterdb.tweets
+
+where  hashtag_1 = 'NaoVaiTerGolpe']]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="Mapas" id="Mapas" type="sql">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[SELECT 
+lat, lon, place_name
+from twitterdb.tweets
+
+where lat is not NULL and lon is not NULL]]></Query>
+  </DataAccess>
+</CDADescriptor>

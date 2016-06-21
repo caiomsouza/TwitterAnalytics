@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><CDADescriptor>
+  <DataSources>
+    <Connection id="time_tweet" type="kettle.TransFromFile">
+      <KtrFile>../endpoints/kettle/time_tweet.ktr</KtrFile>
+    </Connection>
+    <Connection id="topTweets" type="kettle.TransFromFile">
+      <KtrFile>../endpoints/kettle/top10tweets.ktr</KtrFile>
+    </Connection>
+    <Connection id="top_hashtags" type="kettle.TransFromFile">
+      <KtrFile>../endpoints/kettle/top10hashtag.ktr</KtrFile>
+    </Connection>
+    <Connection id="count_url" type="kettle.TransFromFile">
+      <KtrFile>../endpoints/kettle/count_url.ktr</KtrFile>
+    </Connection>
+    <Connection id="count_hashtag" type="kettle.TransFromFile">
+      <KtrFile>../endpoints/kettle/count_hashtags.ktr</KtrFile>
+    </Connection>
+    <Connection id="count_mentions" type="kettle.TransFromFile">
+      <KtrFile>../endpoints/kettle/count_mentions.ktr</KtrFile>
+    </Connection>
+    <Connection id="count_tweets" type="kettle.TransFromFile">
+      <KtrFile>../endpoints/kettle/count_tweets.ktr</KtrFile>
+    </Connection>
+  </DataSources>
+  <DataAccess access="public" connection="time_tweet" id="time_tweet" type="kettle">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[Select values]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="topTweets" id="topTweets" type="kettle">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[Select values]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="top_hashtags" id="top_hashtags" type="kettle">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[Select values]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="count_url" id="count_url" type="kettle">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[Select values]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="count_hashtag" id="count_hashtag" type="kettle">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[Select values]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="count_mentions" id="count_mentions" type="kettle">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[Select values]]></Query>
+  </DataAccess>
+  <DataAccess access="public" connection="count_tweets" id="count_tweets" type="kettle">
+    <Cache duration="3600" enabled="true"/>
+    <Columns/>
+    <Parameters/>
+    <Query><![CDATA[Select values]]></Query>
+  </DataAccess>
+</CDADescriptor>
